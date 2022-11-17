@@ -45,20 +45,20 @@ int main()
 
   cout << endl;
 
-  cout << "Line 26: The total number of boxes sold: "
+  cout << "Line 26: Total number of boxes sold: "
       << totalNumOfBoxesSold << endl;
 
   cout << "Line 27: Enter the cost of one box: ";
   cin >> costOfOneBox;
   cout << endl;
 
-  cout << "Line 30: The total money made by selling "
+  cout << "Line 30: Total money made:1.50 "
       << "cookies: $"
       << totalNumOfBoxesSold * costOfOneBox << endl;
 
   if (numOfVolunteers != 0)
-      cout << "Line 32: The average number of "
-        << "boxes sold by each volunteer: "
+      cout << "Line 32: Average number of "
+        << "boxes sold by each person: "
         << totalNumOfBoxesSold / numOfVolunteers
         << endl;
   else
