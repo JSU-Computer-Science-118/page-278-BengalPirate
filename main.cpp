@@ -24,10 +24,10 @@ int main()
 
   cout << fixed << showpoint << setprecision(2);
 
-  cout << "Line 14: Enter each volunteer's name and "
-      << "the number of boxes " << endl
-      << "      sold by each volunteer, ending "
-      << "with -1: " << endl;
+ // cout << "Line 14: Enter each volunteer's name and "
+ //     << "the number of boxes " << endl
+ //     << "      sold by each volunteer, ending "
+ //     << "with -1: " << endl;
 
   totalNumOfBoxesSold = 0;
   numOfVolunteers = 0;
@@ -43,22 +43,16 @@ int main()
       cin >> name;
     }
 
-  cout << endl;
-
-  cout << "Line 26: Total number of boxes sold: "
-      << totalNumOfBoxesSold << endl;
-
-  cout << "Line 27: Enter the cost of one box: ";
   cin >> costOfOneBox;
-  cout << endl;
+  
+  cout << "Total number of boxes sold: "
+    << totalNumOfBoxesSold << endl;
 
-  cout << "Line 30: Total money made:1.50 "
-      << "cookies: $"
+  cout << "Total money made: $"
       << totalNumOfBoxesSold * costOfOneBox << endl;
 
   if (numOfVolunteers != 0)
-      cout << "Line 32: Average number of "
-        << "boxes sold by each person: "
+      cout << "Average number of boxes sold by each person: "
         << totalNumOfBoxesSold / numOfVolunteers
         << endl;
   else
