@@ -1,0 +1,44 @@
+{
+  "tests": [
+    {
+      "name": "Compile Test",
+      "setup": "cmake . && make",
+      "run": "./page278",
+      "input": "-1\r\n-1\r\n",
+      "output": "",
+      "comparison": "included",
+      "timeout": 3,
+      "points": 25
+    },
+    {
+      "name": "Test for 3 people",
+      "setup": "cmake . && make",
+      "run": "./page278",
+      "input": "Amari\t4\r\nKatrina\t11\r\nLexus\t19\r\n-1\r\n3.50\r\n",
+      "output": "Total number of boxes sold: 34\r\nTotal money made: $119.00\r\nAverage number of boxes sold by each person: 11",
+      "comparison": "exact",
+      "timeout": 3,
+      "points": 25
+    },
+    {
+      "name": "Test for 0 people",
+      "setup": "cmake . && make",
+      "run": "./page278",
+      "input": "-1\r\n1.50\r\n",
+      "output": "Total number of boxes sold: 0\r\nTotal money made: $0.00\r\nNo input.",
+      "comparison": "exact",
+      "timeout": 3,
+      "points": 25
+    },
+    {
+      "name": "Test for 15 people",
+      "setup": "cmake . && make",
+      "run": "./page278",
+      "input": "Frankie\t118\r\nOliver\t207\r\nVicente\t269\r\nRico\t253\r\nAmeer\t237\r\nJamila\t365\r\nTrisha\t284\r\nBrisa\t243\r\nDaijah\t366\r\nEric\t346\r\nTerrence\t121\r\nMyra\t171\r\nMorris\t348\r\nRodolfo\t304\r\nKenny\t289\r\n-1\r\n99.50\r\n",
+      "output": "Total number of boxes sold: 3921\r\nTotal money made: $390139.50\r\nAverage number of boxes sold by each person: 261",
+      "comparison": "exact",
+      "timeout": 3,
+      "points": 25
+    }
+  ]
+}
